@@ -4,7 +4,6 @@ from django.http import HttpResponseRedirect
 from .forms import NameForm
 
 def get_name(request):
-    print('a')
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
         # create a form instance and populate it with data from the request:
@@ -16,7 +15,7 @@ def get_name(request):
             # ...
             # redirect to a new URL:
            
-            return HttpResponseRedirect('/quanlu')
+            return HttpResponseRedirect('testform/thanks.html')
 
     # if a GET (or any other method) we'll create a blank form
     else:
