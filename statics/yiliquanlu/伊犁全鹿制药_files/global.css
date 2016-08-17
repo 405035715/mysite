@@ -1,0 +1,448 @@
+﻿
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body, ol, table, tr, td, dt, dd, dl, h1, h2, h3, h4, h5, h6, form, input, select, textarea {
+	margin:0;
+	padding:0;
+	font-family:"微软雅黑";
+	font-size:12px;
+	font-weight:normal;
+}
+ul, li {
+	margin:0;
+	padding:0;
+	font-family:"微软雅黑";
+	font-weight:normal;
+}
+html {
+	
+}
+body {
+	font-size:12px;
+	color:#999;
+	margin:0;
+	padding:0;
+	_overflow:hidden;
+	overflow-x:hidden;
+	overflow:visible;
+	background-attachment:fixed;
+}
+input, button, select, textarea {
+	outline:none;
+	resize:none;
+}
+p {
+	margin:0;
+	padding:0;
+}
+a img {
+	border:none;
+}
+li {
+	list-style-type:none;
+}
+a {
+	text-decoration:none;
+	color:#000;
+}
+input {
+	vertical-align:middle;
+	font-family:"微软雅黑";
+}
+table {
+	border-collapse:collapse;
+	font-family:"微软雅黑";
+}
+a:hover {
+	cursor:pointer;
+}
+/*{dfilter:alpha(opacity=90);-moz-opacity:0.9;opacity:0.9;}*/
+
+
+
+a, area {
+blr:expression(this.onFocus=this.blur())
+} /* for IE */
+:focus {
+	-moz-outline-style: none;
+} /* for Firefox */
+a {
+	outline:none;
+} /* for FF Chrome */
+.dis {
+	display:none;
+}
+.clear {
+	clear:both;
+}
+.page {
+	text-align:center;
+	clear:both;
+	height:55px;
+	background:#FFF;
+	border-top:1PX #e5e5e5 solid;
+}
+ @media screen and (max-width:1100px) {
+.page {
+	width:1100px;
+}
+}
+.page a {
+	margin:0 10px;
+	height:55px;
+	width:28px;
+	text-align:center;
+	background:url(../images/cur2.png) center no-repeat;
+	line-height:55px;
+	font-size:16px;
+	display:inline-block;
+	color:#6b6b6b;
+}
+.page a.right {
+	float:right;
+	width:55px;
+	overflow:hidden;
+	text-indent:-999px;
+	margin-right:0;
+	background:url(../images/right1.png) left no-repeat;
+}
+.page a.right:hover {
+	background:url(../images/right22.png) left no-repeat;
+}
+.page a.left {
+	float:left;
+	width:55px;
+	overflow:hidden;
+	text-indent:-999px;
+	margin-left:0;
+	background:url(../images/left1.png) left no-repeat;
+}
+.page a.left:hover {
+	background:url(../images/left22.png) left no-repeat;
+}
+.page a:hover {
+	text-decoration:none;
+	background:url(../images/cur.png) center no-repeat;
+	color:#FFF
+}
+.page a.cur {
+	text-decoration:none;
+	background:url(../images/cur.png) center no-repeat;
+	color:#FFF
+}
+#header {
+	width:1250px;
+	min-width:1250px;
+	height:75px;	
+	margin:0 auto;
+	background:#FFF;
+}
+#header .logo {
+	width:90px;
+	height:75px;
+	float:left;
+}
+#header .logo a {
+	float:left;
+}
+#header .logo a img {
+	display:block;
+}
+#header .search {
+	width:150px;
+	height:75px;
+	float:left;
+	display:block;
+	margin-left:48px;
+}
+#header .nav {
+	width:960px;
+	height:75px;
+	float:left;
+	display:block;
+}
+
+#header .nav>ul{width:820px;height:75px;display:block;margin:0 auto;}
+
+#header .nav ul li {
+	float:left;
+	width:116px;
+	height:75px;
+	background:url(../images/nav_03.jpg) right no-repeat;
+}
+#header .nav ul li.last {
+	background:none;
+}
+#header .nav ul li a {
+	font-size:14px;
+	color:#000;
+	width:115px;
+	height:75px;
+	display:block;
+	line-height:75px;
+	text-align:center;
+}
+#header .nav ul li a:hover {
+	font-weight:600;
+	color:#fff;
+	background:#78b100
+}
+#header .nav ul li.hover a {
+	font-weight:600;
+	color:#fff;
+	background:#78b100
+}
+ @media screen and (max-width:1100px) {
+#header {
+	width:1100px;
+}
+}
+ @media screen and (max-width:1100px) {
+#header .logo {
+	padding-left:5px;
+}
+#header .search {
+	margin-left:0;
+}
+}
+#header .search .search1 {
+	width:254px;
+	height:22px;
+	position:relative;
+	left:-124px;
+	top:0;
+	background:#dd7003;
+	padding:10px;
+	display:none;
+	z-index:88;
+}
+#header .search .hover {
+	dfilter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	opacity:0.9;
+}
+#header .search .text1 {
+	width:179px;
+	padding:0 8px;
+	background:#FFF;
+	float:left;
+	height:22px;
+	line-height:22px;
+	border:none;
+}
+#header .search .button {
+	width:58px;
+	color:#fff;
+	border:none;
+	background:#9bd400;
+	float:left;
+	height:22px;
+	line-height:22px;
+	text-align:center;
+	cursor:pointer;
+}
+#header .search .button:hover {
+	background:#acea03;
+}
+#header .erji {
+	height:212px;
+	border-top:1px #609001 solid;
+	position:absolute;
+	left:0;
+	top:75px;
+	display:none;
+	background:url(../images/erji.png) repeat
+}
+#header .nav ul li td {
+	border-left: 1px solid #659304;
+	text-transform:uppercase;
+	background:none;
+}
+#header .nav ul li td:first-child {
+	border-left: 0 none;
+}
+#header .nav ul li td a {
+	display: block;
+	height:66px;
+	padding-top:147px;
+	line-height:18px;
+	width:100%;
+	font-size:14px;
+	font-family:"微软雅黑";
+	color: #fff;
+	background-color:inherit;
+}
+#header .nav ul li td a.ball:hover {
+	background-color:#4f7f09;
+}
+#header .nav ul li td a.b2 {
+	background:url(../images/a1.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b2:hover {
+	background:url(../images/a1.png) center 44px no-repeat #4f7f09;
+}
+#header .nav ul li td a.b22 {
+	background:url(../images/b22.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b20 {
+	background:url(../images/b20.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b24 {
+	background:url(../images/b24.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b26 {
+	background:url(../images/b26.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b28 {
+	background:url(../images/b28.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b35 {
+	background:url(../images/b35.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b30 {
+	background:url(../images/b30.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b31 {
+	background:url(../images/b31.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b46 {
+	background:url(../images/b46.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b33 {
+	background:url(../images/b33.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b34 {
+	background:url(../images/b34.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b36 {
+	background:url(../images/b36.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b42 {
+	background:url(../images/b42.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b25 {
+	background:url(../images/b25.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b3 {
+	background:url(../images/b2.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b3:hover {
+	background:url(../images/b2.png) center 44px no-repeat #4f7f09;
+}
+#header .nav ul li td a.b4 {
+	background:url(../images/b37.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b4:hover {
+	background:url(../images/b37.png) center 44px no-repeat #4f7f09;
+}
+#header .nav ul li td a.b16 {
+	background:url(../images/b38.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b16:hover {
+	background:url(../images/b38.png) center 44px no-repeat #4f7f09;
+}
+#header .nav ul li td a.b5 {
+	background:url(../images/b3.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b5:hover {
+	background:url(../images/b3.png) center 44px no-repeat #4f7f09;
+}
+#header .nav ul li td a.b6 {
+	background:url(../images/b4.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b6:hover {
+	background:url(../images/b4.png) center 44px no-repeat #4f7f09;
+}
+#header .nav ul li td a.b7 {
+	background:url(../images/b5.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b7:hover {
+	background:url(../images/b5.png) center 44px no-repeat #4f7f09;
+}
+#header .nav ul li td a.b7 {
+	background:url(../images/b6.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b7:hover {
+	background:url(../images/b6.png) center 44px no-repeat #4f7f09;
+}
+#header .nav ul li td a.b8 {
+	background:url(../images/b7.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b8:hover {
+	background:url(../images/b7.png) center 44px no-repeat #4f7f09;
+}
+#header .nav ul li td a.b9 {
+	background:url(../images/b8.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b9:hover {
+	background:url(../images/b8.png) center 44px no-repeat #4f7f09;
+}
+#header .nav ul li td a.b11 {
+	background:url(../images/c1.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b11:hover {
+	background:url(../images/c1.png) center 44px no-repeat #4f7f09;
+}
+#header .nav ul li td a.b12 {
+	background:url(../images/c2.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b12:hover {
+	background:url(../images/c2.png) center 44px no-repeat #4f7f09;
+}
+#header .nav ul li td a.b13 {
+	background:url(../images/c3.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b13:hover {
+	background:url(../images/c3.png) center 44px no-repeat #4f7f09;
+}
+#header .nav ul li td a.b14 {
+	background:url(../images/c4.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b14:hover {
+	background:url(../images/c4.png) center 44px no-repeat #4f7f09;
+}
+#header .nav ul li td a.b15 {
+	background:url(../images/c5.png) center 44px no-repeat;
+}
+#header .nav ul li td a.b15:hover {
+	background:url(../images/c5.png) center 44px no-repeat #4f7f09;
+}
+#footer {
+	width:100%;
+	height:91px;
+	line-height:91px;
+	z-index:999;
+	background:#666666;
+	font-size:14px;
+	color:#FFF;
+	text-align:center;
+	position:absolute;
+	bottom:0;
+	left:0;
+	z-index:999;
+}
+#footer .last {
+	position:relative;
+	padding-left:20px;
+}
+#footer .wex {
+	color:#FFF;
+}
+#footer .last strong {
+	width:120px;
+	height:120px;
+	position:absolute;
+	bottom:21px;
+	right:0;
+	padding:10px;
+	padding-bottom:20px;
+	background:url(../images/we.png) bottom no-repeat;
+	display:none;
+}
+
+.fazhanlicheng_ul{width:730px;height:100px;margin:15px auto;}
+.fazhanlicheng_ul .fazhanlicheng{border:2px solid #a79d9d;width:100px;height:100px;float:left;border-radius:100px;margin-left:10px;}
+.fazhanlicheng_ul .fazhanlicheng_a{display:block;width:100px;height:100px;text-align:center;line-height:100px;}

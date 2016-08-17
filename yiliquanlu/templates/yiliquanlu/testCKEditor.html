@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body >
+	<div style = 'margin-left: 180px'>
+		<div style='font-family : sans-serif;font-size : 30pt; text-align : center;width: 800px; margin:50px;'>{{news.news_title | safe}}</div>
+		<div style = 'text-align: left; margin:10px'>发布时间：{{news.news_time | safe}}</div>
+		<div style="width: 800px; background-color : #F7F0FF;" >
+		{{news.news_content | safe}}
+		</div>
+	</div>
+</body>
+</html>
