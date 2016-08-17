@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'testform',
+    'testModel'
 ]
 
 MIDDLEWARE = [

@@ -24,4 +24,5 @@ urlpatterns = [
     url(r'^quanlu/', include('yiliquanlu.urls')),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^testform/', include('testform.urls')),
+    url(r'^testModel', include('testModel.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
