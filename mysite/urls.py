@@ -25,4 +25,5 @@ urlpatterns = [
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^testform/', include('testform.urls')),
     url(r'^testModel', include('testModel.urls')),
+    url(r'^report', include('report.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

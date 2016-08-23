@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../../static/css/indexcss.css">
+    <meta charset="UTF-8">
+    <title>超声报告列表</title>
+    <style>
+        .td{width:60px;overflow:auto}
+    </style>
+</head>
+<body>
+    <div id="container" style="width:1000px;margin-left: 20px;margin: 0 auto;">
+        <div  style="background-color:white;height:20px;width:1000px; float:left;">
+        </div>
+        <form action="?action=add"> {% csrf_token %}
+            <div  style="background-color:#FFD700;height:20px;width:180px;float:left;text-align: center"> 开始日期
+            </div>
+            <div id="date1" style="background-color:#EEEEEE;height:20px;width:180px;float:left;text-align: center">
+                <input id="startDate" type="date" name="startDate"  /></div>
+            <div  style="background-color:#FFD700;height:20px;width:180px;float:left;text-align: center"> 结束日期
+            </div>
+            <div id="date2" style="background-color:#EEEEEE ;;height:20px;width:180px;float:left;text-align: center">
+                <input id="endDate" type="date" name="endDate"  /></div>
+            <div  style="background-color:#FFD700;height:20px;width:140px;float:left;text-align: center"> 天数
+            </div>
+            <div  style="background-color:white;height:20px;width:1000px; float:left;">
+                <input  type="submit" value="统计" formmethod="post" style="width: 180px;">
+            </div>
+        </form>
+
+        <div style="margin: auto">
+            <table border="1" style="top: 20px;text-align: center;width: 1000px" >
+                <tr>
+                    <td>id</td></td><td>姓名</td><td>性别</td><td>年龄</td><td>部位</td><td>检查时间</td><td>操作</td>
+                </tr>
+                <tr>
+                    <form><td><input type="label"></td><td>张跃华</td><td>男</td><td>16</td><td>肝胆</td><td>2016-8-1 00:17:00</td><td><input type="submit"></td></form>
+                </tr>
+                 <tr>
+                    <form><td><input type="label"></td><td>张跃华ffffffffffffffffffff</td><td>男</td><td>16</td><td>肝胆</td><td>2016-8-1 00:17:00</td><td><input type="submit" value="查看"></td></form>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
