@@ -1,0 +1,29 @@
+a:link {color: white;text-decoration:none;}    /* unvisited link */
+a:visited {color: white;text-decoration:none;} /* visited link */
+a:hover {color: white;text-decoration:none;}   /* mouse over link */
+a:active {color: white;text-decoration:none;}  /* selected link */
+
+
+
+/*body*/
+/*{*/
+    /**/
+/*}*/
+/*h1 {*/
+    /*letter-spacing: 3px;*/
+    /*line-height: 120%;*/
+    /*background-color: #003eff;*/
+    /*text-decoration: underline;*/
+/*}*/
+/*p {background-color: #79aec8}*/
+/*p.date {*/
+    /*text-align: right;*/
+/*}*/
+
+/*p.main {*/
+    /*!*white-space: nowrap;*!*/
+    /*text-indent: 50px;*/
+    /*line-height: 200%;*/
+    /*text-align: justify;*/
+/*}*/
+/*div {background-color: red}*/

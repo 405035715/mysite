@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="../../static/report/css/patientlist.css" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8">
     <title>放射报告列表</title>
 </head>
 <body>
     <div id="container" style="width:1000px;margin: 0 auto;margin-top: 20px">
          <div style="background-color: #999999;padding: 15px;">
-        <a href="/report/patientlistOfUS" target="_parent" style="margin-top:50px;padding: 10px;background-color:#b9ca4a;height:30px;width:200px;text-align: center; font-size: large">超声报告</a>
-        <a href="/report/patientlistOfFSK" target="_parent" style="margin-top:50px;padding: 10px;background-color:#b9ca4a;height:30px;width:200px;text-align: center; font-size: large; ">放射报告</a>
-        <a href="/report/patientlistOfENDO" target="_parent" style="margin-top:50px;padding: 10px;background-color:#b9ca4a;height:30px;width:200px;text-align: center; font-size: large; ">内镜报告</a>
+        <a href="/report/patientlistOfUS" target="_parent" style="margin-top:50px;padding: 10px;background-color:#282B2E;height:30px;width:200px;text-align: center; font-size: large">超声报告</a>
+        <a href="/report/patientlistOfFSK" target="_parent" style="margin-top:50px;padding: 10px;background-color:mediumblue;height:30px;width:200px;text-align: center; font-size: large; ">放射报告</a>
+        <a href="/report/patientlistOfENDO" target="_parent" style="margin-top:50px;padding: 10px;background-color:#282B2E;height:30px;width:200px;text-align: center; font-size: large; ">内镜报告</a>
         </div>
         <div  style="background-color:white;height:20px;width:1000px; ">
         </div>
         <div>
-            <form action="/report/patientlistOfUS" method="get">
+            <form action="/report/patientlistOfFSK" method="get">
                 姓名：<input type="text" name="name" value="{{ name }}">
                  &nbsp;&nbsp;&nbsp;&nbsp; 检查时间：<input type="radio" name="examinetime" value="1" checked>1天内
                 <input type="radio" name="examinetime" value="3">3天内
                 <input type="radio" name="examinetime" value="7">7天内
-                <input type="radio" name="examinetime" value="30">1个月&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="examinetime" value="-1">全部&nbsp;&nbsp;&nbsp;&nbsp;
                 <input  type="submit" value="查询"  style="width: 180px;">
             </form>
         </div>
